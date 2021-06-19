@@ -34,6 +34,10 @@ class Snake:
         new_segment.goto(position)
         self.segments.append(new_segment)
 
+    def new_game(self):
+        for segment in self.segments:
+            segment.reset()
+
     def extend(self):
         self.add_segment(self.tail.pos())
 

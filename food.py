@@ -17,3 +17,6 @@ class Food(Turtle):
         x_random = random.randint(-280, 280)
         y_random = random.randint(-280, 280)
         self.setpos(x_random, y_random)
+
+    def new_game(self):
+        self.reset()
